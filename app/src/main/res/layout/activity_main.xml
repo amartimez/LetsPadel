@@ -9,18 +9,18 @@
 
     <ImageView
         android:id="@+id/fondo_pantalla"
-        android:layout_width="409dp"
-        android:layout_height="538dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:focusableInTouchMode="false"
-        android:scaleType="centerCrop"
-        android:src="@drawable/fondopantalla"
+        android:scaleType="fitXY"
+        android:src="@drawable/fondopantalla3"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.037" />
 
     <Button
         android:id="@+id/IniciarSesion"
@@ -29,7 +29,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="8dp"
         android:background="@color/colorBot"
         android:text="Iniciar sesion"
@@ -47,18 +47,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
         android:background="@color/colorBot"
         android:text="Registrate"
         android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="@+id/fondo_pantalla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IniciarSesion"
-        app:layout_constraintVertical_bias="0.23" />
+        app:layout_constraintTop_toBottomOf="@+id/IniciarSesion" />
 
     <Button
         android:id="@+id/ayuda"

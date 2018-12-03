@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/fondo_pantalla"
-        android:layout_width="409dp"
-        android:layout_height="538dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:focusableInTouchMode="false"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondopantalla"
+        android:src="@drawable/fondopantalla3"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/ivGmail"
         android:layout_width="123dp"
         android:layout_height="73dp"
         android:layout_marginStart="8dp"
@@ -31,11 +31,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:layout_constraintTop_toBottomOf="@+id/ivFacebook"
         app:srcCompat="@drawable/gmail" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/ivFacebook"
         android:layout_width="106dp"
         android:layout_height="103dp"
         android:layout_marginStart="8dp"
@@ -48,16 +48,16 @@
         app:srcCompat="@drawable/facebook" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="136dp"
-        android:layout_height="131dp"
+        android:id="@+id/ivLogging"
+        android:layout_width="135dp"
+        android:layout_height="120dp"
         android:layout_marginStart="9dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="8dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/ivGmail"
         app:srcCompat="@drawable/logging" />
 
     <TextView

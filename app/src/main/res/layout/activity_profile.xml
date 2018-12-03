@@ -8,11 +8,11 @@
 
     <ImageView
         android:id="@+id/fondo_pantalla"
-        android:layout_width="409dp"
-        android:layout_height="538dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:focusableInTouchMode="false"
         android:scaleType="centerCrop"
-        android:src="@drawable/fondopantalla"
+        android:src="@drawable/fondopantalla3"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
