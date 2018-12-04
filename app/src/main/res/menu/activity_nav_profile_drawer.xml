@@ -5,33 +5,37 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/ayuda_usuario"
+            android:icon="@drawable/ic_ayuda_usuario"
+            android:title="Ayuda" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/menu_inicio"
+            android:icon="@drawable/ic_menu_principal"
+            android:title="Volver al Menu" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/partidas_abiertas"
+            android:icon="@drawable/ic_partidas_abiertas"
+            android:title="Partidas Abiertas" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/partida_nueva"
+            android:icon="@drawable/ic_nueva_partida"
+            android:title="Nueva Partida" />
+        <item
+            android:id="@+id/configuracion"
+            android:icon="@drawable/ic_configuracion"
+            android:title="Configuracion" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="Otras opciones">
         <menu>
             <item
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:title="Compartir App" />
             <item
                 android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:icon="@drawable/ic_cerrar_session"
+                android:title="Cerrar session" />
         </menu>
     </item>
 
