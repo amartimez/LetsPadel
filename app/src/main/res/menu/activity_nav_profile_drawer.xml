@@ -4,14 +4,16 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_inicio"
+            android:icon="@drawable/ic_menu_principal"
+            android:title="Inicio" />
         <item
             android:id="@+id/ayuda_usuario"
             android:icon="@drawable/ic_ayuda_usuario"
             android:title="Ayuda" />
-        <item
-            android:id="@+id/menu_inicio"
-            android:icon="@drawable/ic_menu_principal"
-            android:title="Volver al Menu" />
+
         <item
             android:id="@+id/partidas_abiertas"
             android:icon="@drawable/ic_partidas_abiertas"
@@ -20,10 +22,7 @@
             android:id="@+id/partida_nueva"
             android:icon="@drawable/ic_nueva_partida"
             android:title="Nueva Partida" />
-        <item
-            android:id="@+id/configuracion"
-            android:icon="@drawable/ic_configuracion"
-            android:title="Configuracion" />
+
     </group>
 
     <item android:title="Otras opciones">
@@ -33,7 +32,7 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Compartir App" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/cerrar_session"
                 android:icon="@drawable/ic_cerrar_session"
                 android:title="Cerrar session" />
         </menu>

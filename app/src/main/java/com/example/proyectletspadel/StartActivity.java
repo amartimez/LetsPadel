@@ -3,6 +3,10 @@ package com.example.proyectletspadel;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.ActionBar;
+import android.view.Gravity;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,17 +24,7 @@ public class StartActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        Toolbar toolbar = setToolbar();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -40,6 +34,12 @@ public class StartActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentManager FragmentManager = getSupportFragmentManager();
+        FragmentManager.beginTransaction().replace(R.id.contenedor,new MenuFragment()).commit();
+
+
+
     }
 
     @Override
@@ -80,22 +80,76 @@ public class StartActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        FragmentManager FragmentManager = getSupportFragmentManager();
+       // Fragment miFragment= null;
+       // boolean fragmentSelecionado = false;
 
-        } else if (id == R.id.nav_slideshow) {
+        if (id == R.id.ayuda_usuario) {
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new AyudaFragment()).commit();
+         //  miFragment =new AyudaFragment();
+            //  fragmentSelecionado=true;
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.menu_inicio) {
+
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new MenuFragment()).commit();
+            //  miFragment =new MenuFragment();
+            //  fragmentSelecionado=true;
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
+
+        } else if (id == R.id.partidas_abiertas) {
+
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new PartidasFragment()).commit();
+            //  miFragment =new PartidasFragment();
+            //  fragmentSelecionado=true;
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
+
+        } else if (id == R.id.partida_nueva) {
+
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new NuevaFragment()).commit();
+            // miFragment =new NuevaFragment();
+            // fragmentSelecionado=true;
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
 
         } else if (id == R.id.nav_share) {
 
-        } else if (id == R.id.nav_send) {
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new CompartirFragment()).commit();
+            // miFragment =new CompartirFragment();
+            // fragmentSelecionado=true;
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
+
+        } else if (id == R.id.cerrar_session) {
+
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new CerrarFragment()).commit();
+            // miFragment =new CerrarFragment();
+            // fragmentSelecionado=true;
+            item.setChecked(true);
+            getSupportActionBar().setTitle(item.getTitle());
 
         }
+
+        // if(fragmentSelecionado==true){
+        // getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,miFragment).commit();
+
+        //}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private Toolbar setToolbar(){
+
+        Toolbar toolbar =(Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_menu_slideshow);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        return toolbar;
     }
 }

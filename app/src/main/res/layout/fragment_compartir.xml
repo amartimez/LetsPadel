@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main_login_activity">
+
+    >
 
     <ImageView
         android:id="@+id/fondo_pantalla"
@@ -21,59 +23,52 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-
-    <ImageButton
-        android:id="@+id/ivGmail"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/instaIv"
         android:layout_width="123dp"
-        android:layout_height="73dp"
+        android:layout_height="111dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
+        android:src="@drawable/instagram"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivFacebook"
-        app:srcCompat="@drawable/gmail" />
+        app:layout_constraintTop_toTopOf="@+id/fondo_pantalla" />
 
-    <ImageButton
-        android:id="@+id/ivFacebook"
-        android:layout_width="106dp"
-        android:layout_height="103dp"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/faceIv"
+        android:layout_width="108dp"
+        android:layout_height="113dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
-        android:background="@drawable/ic_down"
+        android:src="@drawable/facebook"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fondo_pantalla"
-        app:srcCompat="@drawable/facebook" />
+        app:layout_constraintTop_toBottomOf="@+id/instaIv" />
 
-    <ImageButton
-        android:id="@+id/ivLogging"
-        android:layout_width="135dp"
-        android:layout_height="120dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:background="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivGmail"
-        app:srcCompat="@drawable/logging" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/twitterIv"
+        android:layout_width="104dp"
+        android:layout_height="115dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:text="Elige metodo de registro"
-        android:textSize="30dp"
-
-        android:textStyle="bold"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/faceIv"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
 
 </android.support.constraint.ConstraintLayout>

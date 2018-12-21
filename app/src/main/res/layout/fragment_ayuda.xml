@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/fondo_pantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="false"
+    android:scaleType="centerCrop"
+    android:src="@drawable/fondopantalla3"
+    android:visibility="visible"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@color/colorBack"
+    android:padding="24dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ayuda"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- Esta es una aplicacionpara ayudarte a encontrar o bien organizar partidas de padel en tus zonas favoritas"
+        android:textColor="@color/colorTextBlack"
+        />
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Selecciona nueva partida para abrir tu propia partida y que se una gente de tu nivel, deberas ser preciso en los datos y podras aceptar las solicitudes de los participantes"
+        android:textColor="@color/colorTextBlack"
+        />
+
+    <TextView
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-Selecciona buscar partida si lo que quieres es unierte a alguna partida apunto de completarse y jugar hoy mismo!!!"
+        android:textColor="@color/colorTextBlack"
+        />
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

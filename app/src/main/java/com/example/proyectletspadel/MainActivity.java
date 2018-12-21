@@ -1,5 +1,6 @@
 package com.example.proyectletspadel;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,9 +13,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+     setContentView(R.layout.activity_main);
 
-    btnRegistro = findViewById(R.id.registro);
+   btnRegistro = findViewById(R.id.registro);
     btnInicioSesion = findViewById(R.id.IniciarSesion);
 
 

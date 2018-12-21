@@ -6,5 +6,7 @@
     <color name="colorBot">#b4e733</color>
     <color name="colorText">#f8f9f5</color>
     <color name="colorUser">#f10e29</color>
+    <color name="colorBack">#7da4a0a0</color>
+    <color name="colorTextBlack">#080808</color>
 
 </resources>
