@@ -26,10 +26,10 @@ public class AbrirPartida extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calendario);
+        setContentView(R.layout.activity_abrirpartida);
 
         BtnFecha = (Button) findViewById(R.id.id_fecha);
-        BtnHora = (Button) findViewById(R.id.aceptar_fecha);
+        BtnHora = (Button) findViewById(R.id.acept_fecha);
         TvFecha = (EditText) findViewById(R.id.TvFecha);
         TvHora = (EditText) findViewById(R.id.TvHora);
         BtnFecha.setOnClickListener(AbrirPartida.this);
@@ -56,11 +56,11 @@ public class AbrirPartida extends AppCompatActivity implements View.OnClickListe
                     , dia, mes, anyo);
             datePickerDialog.show();
 
-
+        }
             if (v == BtnHora) {
-                final Calendar cal = Calendar.getInstance();
-                hora = cal.get(Calendar.HOUR_OF_DAY);
-                minuto = cal.get(Calendar.MINUTE);
+                final Calendar c = Calendar.getInstance();
+                hora = c.get(Calendar.HOUR_OF_DAY);
+                minuto = c.get(Calendar.MINUTE);
 
                 TimePickerDialog timePickerDialog = new TimePickerDialog(this, new TimePickerDialog.OnTimeSetListener() {
                     @Override
@@ -74,5 +74,5 @@ public class AbrirPartida extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
-}
+
 

@@ -46,6 +46,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Palas" />
         <activity android:name=".Calendario"></activity>
+        <activity android:name=".AbrirPartida"></activity>
+        <activity android:name=".ReciclerView"></activity>
     </application>
 
 </manifest>

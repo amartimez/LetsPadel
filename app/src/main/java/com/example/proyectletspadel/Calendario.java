@@ -1,17 +1,17 @@
 package com.example.proyectletspadel;
 
 import android.app.DatePickerDialog;
-import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
 import java.util.Calendar;
 
@@ -29,10 +29,10 @@ public class Calendario extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_calendario);
 
         BtnFecha = (Button) findViewById(R.id.id_fecha);
-        AceptarFecha = (Button) findViewById(R.id.aceptar_fecha);
+        AceptarFecha = (Button) findViewById(R.id.acept_fecha);
         TvFecha = (EditText) findViewById(R.id.TvFecha);
         BtnFecha.setOnClickListener(Calendario.this);
-        AceptarFecha.setOnClickListener(Calendario.this);
+        //AceptarFecha.setOnClickListener(Calendario.this);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -56,11 +56,17 @@ public class Calendario extends AppCompatActivity implements View.OnClickListene
             datePickerDialog.show();
 
 
-            if (v == AceptarFecha) {
 
 
+            AceptarFecha.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Calendario.this, RecyclerView.class);
+                        startActivity(intent);
+                    }
+                });
             }
         }
     }
-}
+
 
