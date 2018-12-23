@@ -18,7 +18,7 @@ public class Main_login_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_login_activity);
 
-
+//
         IvFacebook=findViewById(R.id.ivFacebook);
         IvGmail=findViewById(R.id.ivGmail);
         IvRegistro=findViewById(R.id.ivLogging);
