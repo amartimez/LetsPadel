@@ -26,7 +26,7 @@ public class Main_login_activity extends AppCompatActivity {
         IvFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main_login_activity.this,StartActivity.class);
+                Intent intent = new Intent(Main_login_activity.this,Calendario.class);
                 startActivity(intent);
             }
         });

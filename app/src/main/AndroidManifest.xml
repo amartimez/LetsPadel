@@ -44,7 +44,8 @@
             android:name=".StartActivity"
             android:label="@string/title_activity_start"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Palas"></activity>
+        <activity android:name=".Palas" />
+        <activity android:name=".Calendario"></activity>
     </application>
 
 </manifest>
