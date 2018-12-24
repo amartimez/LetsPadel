@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="niveles">
+    <item>Selecciona Nivel</item>
+    <item>A</item>
+    <item>B</item>
+    <item>C</item>
+    <item>D</item>
+    <item>Iniciacion</item>
+
+
+</string-array>
+
+    <string-array name="numero">
+    <item>Selecciona Jugadores</item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+
+</string-array>
+
+    <string-array name="partida">
+        <item>Selecciona tipo partida</item>
+        <item>MAsculino</item>
+        <item>Femenino</item>
+        <item>Mixto</item>
+
+    </string-array>
+
+
+
+</resources>

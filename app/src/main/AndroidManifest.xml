@@ -48,6 +48,7 @@
         <activity android:name=".Calendario"></activity>
         <activity android:name=".AbrirPartida"></activity>
         <activity android:name=".ReciclerView"></activity>
+
     </application>
 
 </manifest>
