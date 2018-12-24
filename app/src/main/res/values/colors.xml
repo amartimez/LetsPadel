@@ -8,5 +8,7 @@
     <color name="colorUser">#f10e29</color>
     <color name="colorBack">#7da4a0a0</color>
     <color name="colorTextBlack">#080808</color>
+    <color name="my_spinner_text_color">#e2dbdb</color>
+
 
 </resources>
