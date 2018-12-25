@@ -4,10 +4,12 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.WindowInsets;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Main_login_activity extends AppCompatActivity {
     ImageButton IvFacebook;
@@ -26,16 +28,24 @@ public class Main_login_activity extends AppCompatActivity {
         IvFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main_login_activity.this,Calendario.class);
+                Intent intent = new Intent(Main_login_activity.this,StartActivity.class);
                 startActivity(intent);
+                Toast toast = Toast.makeText(Main_login_activity.this, "Loggin con Facebook Correcto", Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
+                toast.show();
             }
         });
 
         IvGmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main_login_activity.this,AbrirPartida.class);
+                Intent intent = new Intent(Main_login_activity.this,StartActivity.class);
                 startActivity(intent);
+
+
+                Toast toast = Toast.makeText(Main_login_activity.this, "Loggin con Gmail Correcto", Toast.LENGTH_LONG);
+                toast.setGravity(Gravity.CENTER_HORIZONTAL, 0, 0);
+                toast.show();
             }
         });
 
