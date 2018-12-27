@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.Calendar;
+import java.util.Date;
 
 public class Calendario extends AppCompatActivity implements View.OnClickListener {
 
@@ -30,7 +31,7 @@ public class Calendario extends AppCompatActivity implements View.OnClickListene
 
         BtnFecha = (Button) findViewById(R.id.id_fecha);
         AceptarFecha = (Button) findViewById(R.id.acept_fecha);
-        TvFecha = (EditText) findViewById(R.id.TvFecha);
+        TvFecha = findViewById(R.id.TvFecha);
         BtnFecha.setOnClickListener(Calendario.this);
         //AceptarFecha.setOnClickListener(Calendario.this);
     }
@@ -45,10 +46,15 @@ public class Calendario extends AppCompatActivity implements View.OnClickListene
             mes = c.get(Calendar.MONTH);
             anyo = c.get(Calendar.YEAR);
 
-            DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
+        // he intentado sin exito poner la fecha actual.
+            final DatePickerDialog datePickerDialog = new DatePickerDialog(this, new DatePickerDialog.OnDateSetListener() {
                 @Override
                 public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                    //datePickerDialog=null;
+
                     TvFecha.setText(dayOfMonth + "/" + (monthOfYear + 1) + "/" + year);
+                   // datePickerDialog.init(year, month, day, this);
+                   // datePickerDialog.updateDate(year = 2019, monthOfYear = 1, dayOfMonth = 1);
                 }
 
             }
@@ -61,7 +67,7 @@ public class Calendario extends AppCompatActivity implements View.OnClickListene
             AceptarFecha.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(Calendario.this, Invitacion.class);
+                        Intent intent = new Intent(Calendario.this, AceptarInvitacion.class);
                         startActivity(intent);
                     }
                 });

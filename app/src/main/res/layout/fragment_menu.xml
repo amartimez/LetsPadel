@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/fondo_pantalla"
-        android:layout_width="match_parent"
+        android:layout_width="390dp"
         android:layout_height="match_parent"
         android:focusableInTouchMode="false"
         android:scaleType="centerCrop"
@@ -22,7 +22,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
 
     <TextView
         android:id="@+id/textView5"

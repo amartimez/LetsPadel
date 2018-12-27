@@ -48,7 +48,7 @@
         <activity android:name=".Calendario" />
         <activity android:name=".AbrirPartida" />
         <activity android:name=".ReciclerView" />
-        <activity android:name=".EnviarInvitacion" />
+        <activity android:name=".AceptarInvitacion" />
         <activity android:name=".Invitacion"></activity>
     </application>
 

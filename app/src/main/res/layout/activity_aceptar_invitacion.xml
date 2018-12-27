@@ -42,13 +42,13 @@
         app:layout_constraintVertical_bias="0.587" />
 
     <ImageView
-        android:id="@+id/loadingView"
+        android:id="@+id/logo_aceptar"
         android:layout_width="222dp"
         android:layout_height="110dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="292dp"
-        android:src="@drawable/ic_email_black"
+        android:src="@drawable/ic_happy"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -61,7 +61,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:paddingLeft="35dp"
-        android:text="Hemos enviado un mensaje al administrador de la partida, en breves te llegará la confirmación."
+        android:text="Hemos abierto tu partida, te enviaremos la invitaciones de los jugadores interesados!!"
         android:textSize="25dp"
         android:textStyle="bold"
         android:textColor="@color/colorTextBlack"
