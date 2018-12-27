@@ -61,7 +61,7 @@ public class Calendario extends AppCompatActivity implements View.OnClickListene
             AceptarFecha.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent = new Intent(Calendario.this, RecyclerView.class);
+                        Intent intent = new Intent(Calendario.this, Invitacion.class);
                         startActivity(intent);
                     }
                 });
