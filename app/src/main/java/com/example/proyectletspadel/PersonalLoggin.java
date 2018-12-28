@@ -26,11 +26,13 @@ import com.parse.ParseUser;
 
 public class PersonalLoggin extends AppCompatActivity {
    Button btnAceptar;
+   Button btnCancelar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         Parse.initialize(new Parse.Configuration.Builder(this)
+
                 .applicationId(getString(R.string.back4app_app_id))
                 // if defined
                 .clientKey(getString(R.string.back4app_client_key))
@@ -40,11 +42,14 @@ public class PersonalLoggin extends AppCompatActivity {
 
         );
         ParseInstallation.getCurrentInstallation().saveInBackground();
+        Toast.makeText(PersonalLoggin.this,"Solo te llevará 15 segundos!! :)", Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_personal_loggin);
         final EditText userTxt;
         final EditText PasswordTxt;
 
+
         btnAceptar= findViewById(R.id.buttonAceptar);
+        btnCancelar= findViewById(R.id.buttonCandelar);
         userTxt = findViewById(R.id.PersonalUsuario);
         PasswordTxt = findViewById(R.id.PersonalContraseña);
 
@@ -57,7 +62,7 @@ public class PersonalLoggin extends AppCompatActivity {
             @Override
             public void done(ParseException e) {
                 if (e == null) {
-                    Toast.makeText(PersonalLoggin.this,"Solo te llevará 15 segundos!! :)", Toast.LENGTH_LONG).show();
+                   // Toast.makeText(PersonalLoggin.this,"Solo te llevará 15 segundos!! :)", Toast.LENGTH_LONG).show();
                 } else {
                     ParseUser.logOut();
                     Toast.makeText(PersonalLoggin.this, e.getMessage(), Toast.LENGTH_LONG).show();
@@ -68,8 +73,16 @@ public class PersonalLoggin extends AppCompatActivity {
         btnAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(PersonalLoggin.this,StartActivity.class);
+                Intent intent2 = new Intent(PersonalLoggin.this,Profile.class);
                 startActivity(intent2);
+            }
+        });
+
+        btnCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(PersonalLoggin.this,MainActivity.class);
+                startActivity(i);
             }
         });
     }

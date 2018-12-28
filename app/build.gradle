@@ -36,6 +36,11 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //recicleview
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //libreria para camara
+    implementation 'com.frosquivel:magicalcamera:5.0.5'
+
+
+
 
 }
 
@@ -43,4 +48,5 @@ repositories {
     mavenCentral()
     jcenter()
     maven { url 'https://jitpack.io' }
+
 }

@@ -31,6 +31,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,6 +76,7 @@ public class Login_Activity extends AppCompatActivity implements LoaderCallbacks
         mEmailView = (AutoCompleteTextView) findViewById(R.id.email);
         populateAutoComplete();
 
+
         mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
@@ -83,6 +88,16 @@ public class Login_Activity extends AppCompatActivity implements LoaderCallbacks
                 return false;
             }
         });
+
+          /*ParseUser.logInInBackground("Jerry", "showmethemoney", new LogInCallback() {
+            public void done(ParseUser user, ParseException e) {
+                if (user != null) {
+                    // Hooray! The user is logged in.
+                } else {
+                    // Signup failed. Look at the ParseException to see what happened.
+                }
+            }
+        });*/
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {

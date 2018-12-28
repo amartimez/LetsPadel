@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".StartActivity"
     tools:showIn="@layout/app_bar_start">
@@ -26,6 +27,4 @@
         tools:textColor="@android:color/background_light" />
 
 
-
-
-    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

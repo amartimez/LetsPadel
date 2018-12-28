@@ -10,7 +10,7 @@
 
     <ImageView
         android:id="@+id/fondo_pantalla"
-        android:layout_width="match_parent"
+        android:layout_width="401dp"
         android:layout_height="match_parent"
         android:focusableInTouchMode="false"
         android:scaleType="centerCrop"
@@ -18,57 +18,67 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Selecciona la red social para compartir"
+        android:textColor="@color/colorBot"
+        android:textSize="25dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
         android:id="@+id/instaIv"
-        android:layout_width="123dp"
-        android:layout_height="111dp"
+        android:layout_width="128dp"
+        android:layout_height="136dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
-        android:src="@drawable/instagram"
-        app:civ_border_color="#FFFFFF"
-        app:civ_border_width="3dp"
+        android:background="@null"
+        android:src="@drawable/ic_instagram"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fondo_pantalla" />
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageButton
         android:id="@+id/faceIv"
-        android:layout_width="108dp"
-        android:layout_height="113dp"
+        android:layout_width="137dp"
+        android:layout_height="123dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/facebook"
-        app:civ_border_color="#FFFFFF"
-        app:civ_border_width="3dp"
-        app:layout_constraintBottom_toBottomOf="@+id/twitterIv"
+        android:background="@null"
+        android:src="@drawable/ic_facebook"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/instaIv"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/instaIv" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
+    <ImageButton
         android:id="@+id/twitterIv"
-        android:layout_width="104dp"
+        android:layout_width="139dp"
         android:layout_height="115dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="36dp"
-        android:src="@drawable/twitter"
+        android:background="@null"
+        android:src="@drawable/ic_twitter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/faceIv"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>

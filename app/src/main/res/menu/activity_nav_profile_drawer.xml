@@ -21,7 +21,7 @@
         <item
             android:id="@+id/partida_nueva"
             android:icon="@drawable/ic_nueva_partida"
-            android:title="Nueva Partida" />
+            android:title="Editar Peril" />
 
     </group>
 
@@ -34,7 +34,7 @@
             <item
                 android:id="@+id/cerrar_session"
                 android:icon="@drawable/ic_cerrar_session"
-                android:title="Cerrar session" />
+                android:title="Noticias" />
         </menu>
     </item>
 

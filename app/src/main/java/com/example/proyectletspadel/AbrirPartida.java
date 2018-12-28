@@ -2,6 +2,7 @@ package com.example.proyectletspadel;
 
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -16,7 +17,7 @@ import android.widget.TimePicker;
 import java.util.Calendar;
 
 public class AbrirPartida extends AppCompatActivity implements View.OnClickListener {
-
+    Button btnAceptar;
     Button BtnFecha;
     Button BtnHora;
     TextView TvFecha;
@@ -27,13 +28,13 @@ public class AbrirPartida extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_abrirpartida);
-
         BtnFecha = (Button) findViewById(R.id.id_fecha);
         BtnHora = (Button) findViewById(R.id.acept_fecha);
-        TvFecha = (EditText) findViewById(R.id.TvFecha);
-        TvHora = (EditText) findViewById(R.id.TvHora);
+        TvFecha =  findViewById(R.id.TvFecha);
+        TvHora =  findViewById(R.id.TvHora);
         BtnFecha.setOnClickListener(AbrirPartida.this);
         BtnHora.setOnClickListener(AbrirPartida.this);
+        btnAceptar=findViewById(R.id.aceptarPartida);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
@@ -72,7 +73,16 @@ public class AbrirPartida extends AppCompatActivity implements View.OnClickListe
                 timePickerDialog.show();
 
             }
+            btnAceptar.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(AbrirPartida.this, AceptarInvitacion.class);
+                    startActivity(intent);
+                }
+            });
         }
+
+
     }
 
 
