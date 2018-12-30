@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter {
+public class Adapter extends RecyclerView.Adapter implements View.OnClickListener {
 
     private Context context;
     private ArrayList<Item> Listitems;
@@ -49,6 +49,11 @@ public class Adapter extends RecyclerView.Adapter {
     @Override
     public int getItemCount() {
         return Listitems.size();
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 
     public class Holder extends RecyclerView.ViewHolder{
