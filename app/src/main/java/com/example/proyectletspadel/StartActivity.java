@@ -75,29 +75,25 @@ public class StartActivity extends AppCompatActivity
         int id = item.getItemId();
 
         FragmentManager FragmentManager = getSupportFragmentManager();
-       // Fragment miFragment= null;
-       // boolean fragmentSelecionado = false;
+
 
         if (id == R.id.ayuda_usuario) {
             FragmentManager.beginTransaction().replace(R.id.contenedor,new AyudaFragment()).commit();
-         //  miFragment =new AyudaFragment();
-            //  fragmentSelecionado=true;
+
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
         } else if (id == R.id.menu_inicio) {
 
             FragmentManager.beginTransaction().replace(R.id.contenedor,new MenuFragment()).commit();
-            //  miFragment =new MenuFragment();
-            //  fragmentSelecionado=true;
+
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
         } else if (id == R.id.partidas_abiertas) {
 
             FragmentManager.beginTransaction().replace(R.id.contenedor,new PartidasFragment()).commit();
-            //  miFragment =new PartidasFragment();
-            //  fragmentSelecionado=true;
+
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
@@ -111,25 +107,20 @@ public class StartActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
             FragmentManager.beginTransaction().replace(R.id.contenedor,new CompartirFragment()).commit();
-            // miFragment =new CompartirFragment();
-            // fragmentSelecionado=true;
+
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
         } else if (id == R.id.cerrar_session) {
 
             FragmentManager.beginTransaction().replace(R.id.contenedor,new CerrarFragment()).commit();
-            // miFragment =new CerrarFragment();
-            // fragmentSelecionado=true;
+
             item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
         }
 
-        // if(fragmentSelecionado==true){
-        // getSupportFragmentManager().beginTransaction().replace(R.id.contenedor,miFragment).commit();
 
-        //}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

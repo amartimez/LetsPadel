@@ -16,6 +16,7 @@ public class Adapter extends RecyclerView.Adapter implements View.OnClickListene
 
     private Context context;
     private ArrayList<Item> Listitems;
+    private View.OnClickListener Listener;
 
     public Adapter(Context context, ArrayList<Item> Listitems){
 
@@ -30,7 +31,10 @@ public class Adapter extends RecyclerView.Adapter implements View.OnClickListene
 
         View contentView = LayoutInflater.from(context).inflate(R.layout.layout_itemlista, null);
         System.out.println("Create viewholder"+ viewGroup);
+        contentView.setOnClickListener(this);
         return new Holder(contentView);
+
+
     }
 
     @Override
@@ -51,8 +55,18 @@ public class Adapter extends RecyclerView.Adapter implements View.OnClickListene
         return Listitems.size();
     }
 
+    public void setOnClickListener(View.OnClickListener listener){
+    this.Listener=listener;
+
+    }
+
     @Override
     public void onClick(View v) {
+
+        if(Listener!=null){
+            Listener.onClick(v);
+
+        }
 
     }
 

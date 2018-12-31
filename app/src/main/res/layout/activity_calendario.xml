@@ -52,7 +52,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472" />
+        app:layout_constraintVertical_bias="0.374" />
 
     <Button
         android:id="@+id/acept_fecha"
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="72dp"
         android:background="@color/colorBot"
         android:text="Aceptar "
         app:layout_constraintBottom_toBottomOf="parent"
@@ -76,7 +76,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:ems="10"
-        android:hint="Seleciona una fecha"
         android:inputType="date"
         android:textSize="25dp"
         android:textStyle="bold"

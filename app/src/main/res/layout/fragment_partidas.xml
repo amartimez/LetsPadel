@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AyudaFragment">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/fondo_pantalla"
-        android:layout_width="match_parent"
+        android:layout_width="401dp"
         android:layout_height="match_parent"
         android:focusableInTouchMode="false"
         android:scaleType="centerCrop"
@@ -16,18 +15,145 @@
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
-        android:id="@+id/partidas"
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Estas son tus partidas programadas"
+        android:textColor="@color/colorBot"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="volver al menu"
-        android:textSize="36sp" />
+        android:orientation="vertical"
+        android:paddingLeft="100dp"
+        android:paddingTop="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_all_done" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partida con Carlos Masculino"
+                android:textSize="18dp"
+                android:textColor="@color/colorBot"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EL 17/01/2019 EN Padel I Badalona" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crretara nacional 2 num 24 hora 19:00 " />
+
+
+        </LinearLayout>
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_all_done" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partida con Silvia Mixto"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBot"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EL 18/01/2019 EN CPR ripollet" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Av de los rios 45 HORA 16:00 " />
+
+
+        </LinearLayout>
+
+        <ImageView
+
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_all_done" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="99dp"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Partida con Nuria Mixto"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorBot"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EL 20/01/2019 EN UP Esplugues" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Av de los rios 45 HORA 18:00" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
