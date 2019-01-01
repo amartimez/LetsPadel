@@ -25,7 +25,6 @@ public class ReciclerView extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_reciclerview);
-        btonFloat= findViewById(R.id.btonFloat);
         reciclerview= findViewById(R.id.id_recycleview);
         manager= new LinearLayoutManager(this);
         reciclerview.setLayoutManager(manager);
@@ -46,13 +45,7 @@ public class ReciclerView extends AppCompatActivity {
             }
         });
 
-        btonFloat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ReciclerView.this, Invitacion.class);
-                startActivity(intent);
-            }
-        });
+
     }
 
     private ArrayList<Item> GetListItems(){
@@ -63,7 +56,15 @@ public class ReciclerView extends AppCompatActivity {
         ListItems.add(new Item (R.drawable.ic_person_add, "Jose mixto en Cornella", "Partida nivel B faltan 2 palas"));
         ListItems.add(new Item (R.drawable.ic_person_add, "Sara Fem en Santa Coloma", "Partida nivel C faltan 2 palas"));
         ListItems.add(new Item (R.drawable.ic_person_add, "Julio masc en el Prat", "Partida nivel C faltan 3 palas"));
-        ListItems.add(new Item (R.drawable.ic_person_add, "Sonia masc en Horta", "Partida nivel B faltan 1 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Javier masc en Horta", "Partida nivel B faltan 1 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Juan mixto en Esplugues", "Partida nivel A faltan 2 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Sarai Fem en Sants", "Partida nivel B faltan 1 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Pedro mixto en Ripollet", "Partida nivel B faltan 2 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Carlos masc en Badalona", "Partida nivel A faltan 3 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Jose mixto en Cornella", "Partida nivel B faltan 2 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Sara Fem en Santa Coloma", "Partida nivel C faltan 2 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Julio masc en el Prat", "Partida nivel C faltan 3 palas"));
+        ListItems.add(new Item (R.drawable.ic_person_add, "Javier masc en Horta", "Partida nivel B faltan 1 palas"));
         ListItems.add(new Item (R.drawable.ic_person_add, "Juan mixto en Esplugues", "Partida nivel A faltan 2 palas"));
         ListItems.add(new Item (R.drawable.ic_person_add, "Sarai Fem en Sants", "Partida nivel B faltan 1 palas"));
         ListItems.add(new Item (R.drawable.ic_person_add, "Pedro mixto en Ripollet", "Partida nivel B faltan 2 palas"));

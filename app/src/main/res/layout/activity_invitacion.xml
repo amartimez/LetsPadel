@@ -20,18 +20,19 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="39dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:textColor="@color/colorBot"
         android:paddingLeft="35dp"
         android:text="Enviando invitacion!!"
+        android:textColor="@color/colorBot"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/loadingView"
@@ -53,24 +54,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="347dp"
         android:layout_height="147dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:paddingLeft="35dp"
-        android:text="Hemos enviado un mensaje al administrador de la partida, en breves te llegará la confirmación."
-        android:textColor="@color/colorTextBlack"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/volverInicio"
+        android:background="@color/colorBack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loadingView"
-        app:layout_constraintVertical_bias="0.109" />
+        app:layout_constraintTop_toTopOf="@+id/loadingView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="147dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:paddingLeft="35dp"
+            android:text="Hemos enviado un mensaje al administrador de la partida, en breves te llegará la confirmación."
+            android:textColor="@color/colorTextBlack"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/volverInicio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/loadingView"
+            app:layout_constraintVertical_bias="0.109" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/volverInicio"
@@ -78,11 +91,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="44dp"
         android:background="@color/colorBot"
         android:text="Inicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 
 </android.support.constraint.ConstraintLayout>

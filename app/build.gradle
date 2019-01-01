@@ -29,6 +29,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     //libreria nueva
     implementation 'com.robertlevonyan.view:MaterialExpansionPanel:1.3.0'
+    implementation'com.robertlevonyan.view:MaterialChipView:1.2.5'
     //libreria bases de datos
     implementation 'com.github.parse-community.Parse-SDK-Android:fcm:1.18.5'
     //libreria grafica para circulos
@@ -38,7 +39,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     //libreria para camara
     implementation 'com.frosquivel:magicalcamera:5.0.5'
-
+    compile 'com.robertlevonyan.view:MaterialChipView:1.2.5'
 
 
 
@@ -48,5 +49,6 @@ repositories {
     mavenCentral()
     jcenter()
     maven { url 'https://jitpack.io' }
+
 
 }

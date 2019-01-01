@@ -32,8 +32,8 @@
                 android:icon="@drawable/ic_menu_share"
                 android:title="Compartir App" />
             <item
-                android:id="@+id/cerrar_session"
-                android:icon="@drawable/ic_cerrar_session"
+                android:id="@+id/noticias"
+                android:icon="@drawable/ic_assignment"
                 android:title="Noticias" />
         </menu>
     </item>

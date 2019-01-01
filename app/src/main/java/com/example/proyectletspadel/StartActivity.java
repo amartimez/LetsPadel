@@ -108,14 +108,14 @@ public class StartActivity extends AppCompatActivity
 
             FragmentManager.beginTransaction().replace(R.id.contenedor,new CompartirFragment()).commit();
 
-            item.setChecked(true);
+            //item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
-        } else if (id == R.id.cerrar_session) {
+        } else if (id == R.id.noticias) {
 
-            FragmentManager.beginTransaction().replace(R.id.contenedor,new CerrarFragment()).commit();
+            FragmentManager.beginTransaction().replace(R.id.contenedor,new NoticiasFragment()).commit();
 
-            item.setChecked(true);
+           // item.setChecked(true);
             getSupportActionBar().setTitle(item.getTitle());
 
         }
